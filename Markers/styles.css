@@ -1,5 +1,6 @@
 h1{
     text-align: center;
+
 }
 .marker{
     height: 25px;
@@ -7,13 +8,17 @@ h1{
     margin: 10px auto;
 }
 
-.one{
-    background-color: red;
+.red{
+    background: linear-gradient(90deg)
 }
 
 .two{
-    background-color: green;
+    background-color: #007f00;
 }
 .three{
-    background-color: blue;
+    background-color:hsl(240, 100%, 50%);
+}
+.container{
+background-color:rgb(255, 255, 255);
+padding: 10px 0;
 }
