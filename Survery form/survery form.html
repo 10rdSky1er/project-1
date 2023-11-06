@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survevy Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Ice Cream Survey</h1>
+    <p id="description">Hi there, feel free to fill out this short survevy below about your favorite kinds of Ice Cream.
+    </p>
+
+    <form id="survey-form">
+        <fieldset>
+            <legend>Name and Email (required)</legend>
+            <label for="name" id="name-label">Enter Your Name: <input id="name" name="name" type="text" required
+                    placeholder="John Doe" /></label>
+            <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" required
+                    placeholder="JohnD03@yahoooo.com" /></label>
+        </fieldset>
+        <fieldset>
+            <legend>Do you like Ice Cream</legend>
+            <p>We know that not eveyone will like the same thing. If we did the woldf would be boring. Do you like Ice Ceam</p>
+            <label for="dropdown">Select one
+                <select id="dropdown" name="YNS">
+                    <option value="">(select one)</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                    <option value="3">Sometimes</option>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ice Cream Info</legend>
+            <label for="number" id="number-label">How often do you eat ice cream in a month? (Optional): <input
+                    id="number" type="number" name="age" min="1" max="120" /></label>
+
+            <fieldset> 
+                <legend>What is your favorite flavor?</legend>
+                <p>If you could only eat this kind of ice cream for the rest of your life what would be?</p>
+                <label for="Vanilla"><input id="Vanilla" type="radio" name="Vanilla" class="inline" checked />Vanilla </label>
+                <label for="Chocolate"><input id="Chocolate" type="radio" name="Chocolate" class="inline" />Chocolate </label>
+                <label for="CaC"><input id="CaC" type="radio" name="Cookies-and-cream" class="inline" />Cookies and Cream </label>
+                <label for="Strawberry"><input id="Strawberry" type="radio" name="Strawberry" class="inline" />Strawberry </label>
+                <label for="CChip"><input id="CChip" type="radio" name="Chocolate-Chip" class="inline" />Chocolate Chip</label>
+                <label for="BPecan"><input id="BPecan" type="radio" name="Butter-Pecan" class="inline" />Butter Pecan </label>
+                <label for="CCCD"><input id="CCCD" type="radio" name="Cookie Dough" class="inline" />Chocolate Chip Cookie Dough </label>
+            </fieldset>
+        </fieldset>
+
+        <input type="checkbox" id="Vanilla" name="Vanilla" value="Vanilla">
+  <label for="Vanilla">Vanilla</label><br>
+
+  <input type="checkbox" id="Chocolate" name="Chocolate" value="Chocolate">
+  <label for="Chocolate">Chocolate</label><br>
+
+  <input type="checkbox" id="CAC" name="CAC" value="CAC">
+  <label for="CAC">Cookies and Cream </label><br>
+
+  <input type="checkbox" id="Strawberry" name="Strawberry" value="Strawberry">
+  <label for="Strawberry">Strawberry</label><br>
+  
+  <input type="checkbox" id="CChip" name="CChip" value="CChip">
+  <label for="CChip">Chocolate Chip</label><br>
+  
+  <input type="checkbox" id="BPecan" name="BPecan" value="BPecan">
+  <label for="BPecan">Butter Pecan</label><br>
+  
+  <input type="checkbox" id="CCCD" name="CCCD" value="CCCD">
+  <label for="CCCD">Chocolate Chip Cookie Dough</label><br>
+  
+  <input type="checkbox" id="Caramel" name="Caramel" value="Caramel">
+  <label for="Caramel">Caramel</label><br>
+  
+  <input type="checkbox" id="MCC" name="MCC" value="MCC">
+  <label for="MCC">Mint Chocolate Chip</label><br>
+  
+  <input type="checkbox" id="Neapolitan" name="Neapolitan" value="Neapolitan">
+  <label for="Neapolitan">Neapolitan</label><br>
+  
+  <input type="checkbox" id="RR" name="RR" value="RR">
+  <label for="RR">Rocky Road</label><br>
+  
+  <input type="checkbox" id="CPB" name="CPB" value="CPB">
+  <label for="CPB">Chocolate Peanut Butter</label><br>
+  
+  <input type="checkbox" id="Coffee" name="Coffee" value="Coffee">
+  <label for="Coffee">Coffee</label><br>
+  
+  <input type="checkbox" id="Pistachio" name="Pistachio" value="Pistachio">
+  <label for="Pistachio">Pistachio</label><br>
+  
+  <input type="checkbox" id="Cherry" name="Cherry" value="Cherry">
+  <label for="Cherry">Cherry</label><br>
+  
+
+        <fieldset>
+            <label for="bio">Feel free to leave any comments:
+                <textarea id="bio" name="bio" rows="3" cols="30"
+                    placeholder="I like ice cream only with other desserts, does that still count?"></textarea>
+            </label>
+        </fieldset>
+
+
+    </form>
+</body>
+
+</html>
