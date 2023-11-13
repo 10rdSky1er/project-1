@@ -50,33 +50,53 @@
                         </legend>
                         <ul class="answers-list">
                             <li>
-                                <label><input id="q1-a1" type="radio"></label>
+                                <label for="q1-a1"><input value="True" id="q1-a1" type="radio" name="Q1">True</label>
                             </li>
                             <li>
-                                <label><input id="q1-a2" type="radio"></label>
+                                <label for="q1-a2"><input value="False" id="q1-a2" type="radio" name="Q1">False</label>
                             </li>
                         </ul>
                     </fieldset>
                 </div>
                 <div class="question-block">
-                    <p>2</p>
+                    <p> 2</p>
                     <fieldset class="question" name="Q2">
                         <legend>
                             True or False: The light from the moon is not refelcted from the sun.
                         </legend>
                         <ul class="answers-list">
                             <li>
-                                <label><input id="q2-a1" type="radio"></label>
+                                <label for="q2-a1"><input value="True" id="q2-a1" type="radio" name="Q2">True</label>
                             </li>
                             <li>
-                                <label><input id="q2-a2" type="radio"></label>
+                                <label for="q2-a2"><input value="False" id="q2-a2" type="radio" name="Q2">False</label>
                             </li>
                         </ul>
                     </fieldset>
                 </div>
-                <section role="region" aria-labelledby="css-questions">
-                    <h2 id="css-questions">CSS</h2>
-                </section>
+            </section>
+
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS</h2>
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="y/n">Are you a frontend developer?</label>
+                    </div>
+                    <div class="answer">
+                        <select required name="y/n" id="y/n">
+                            <option value="">Select an option</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="question-block">
+                        <label for="fq">What does CSS do in a website?</label>
+                    </div>
+                    <div class="answer">
+                        <textarea name="fq" id="fq" cols="45" rows="7" placeholder="Allows us to add color"></textarea>
+                    </div>
+                </div>
+            </section>
         </form>
     </main>
 </body>
