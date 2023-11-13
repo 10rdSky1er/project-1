@@ -18,3 +18,21 @@ header {
   aspect-ratio: 35/4;
   padding: 0.4rem;
 }
+
+h1 {
+  color: #f1be32;
+  font-size: min(5vw, 1.2em);
+  font-family: Verdana, Tahoma, sans-serif;
+
+}
+
+nav>ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h2 {
+  border-bottom: 4px solid #dfdfe2;
+  font-family: Verdana, Tahoma, sans-serif;
+
+}
