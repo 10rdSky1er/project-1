@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Accessibility Quiz</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A Quiz about Html">
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Accessibility Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -21,29 +21,62 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+        <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
             <section role="region" aria-labelledby="student-info">
-                <h2 id="student-info"> Student Info</h2>
+                <h2 id="student-info">Student Info</h2>
                 <div class="info">
-                    <label for="name">Name:</label>
-                    <input id="name">
+                    <label for="student-name">Name:</label>
+                    <input type="text" name="student-name" id="student-name" />
                 </div>
                 <div class="info">
-                    <label for="email">Email:</label>
-                    <input id="email">
+                    <label for="student-email">Email:</label>
+                    <input type="email" name="student-email" id="student-email" />
                 </div>
                 <div class="info">
-                    <label for="birthdate">Birthdate: </label>
-                    <input id="birthdate">
+                    <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
+                    <input type="date" name="birth-date" id="birth-date" />
                 </div>
             </section>
+
             <section role="region" aria-labelledby="html-questions">
-                <h2 id="html-questions"> HTML Questions</h2>
-            </section>
-            <section role="region" aria-labelledby="css-questions">
-                <h2 id="css-questions"> CSS Questions</h2>
-            </section>
+                <h2 id="html-questions">HTML</h2>
+                <div class="question-block">
+                    <p>1</p>
+                    <fieldset class="question" name="Q1">
+                        <legend>
+                            True or False: The sun appears mostly yellow to most people.
+                        </legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label><input id="q1-a1" type="radio"></label>
+                            </li>
+                            <li>
+                                <label><input id="q1-a2" type="radio"></label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2</p>
+                    <fieldset class="question" name="Q2">
+                        <legend>
+                            True or False: The light from the moon is not refelcted from the sun.
+                        </legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label><input id="q2-a1" type="radio"></label>
+                            </li>
+                            <li>
+                                <label><input id="q2-a2" type="radio"></label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <section role="region" aria-labelledby="css-questions">
+                    <h2 id="css-questions">CSS</h2>
+                </section>
         </form>
     </main>
 </body>
