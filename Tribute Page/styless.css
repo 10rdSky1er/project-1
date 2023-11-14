@@ -65,3 +65,6 @@ li {
     margin: 16px 0;
     display: list-item;
 }
+.date::after{
+    content: " - "
+}
