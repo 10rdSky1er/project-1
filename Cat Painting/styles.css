@@ -10,7 +10,10 @@ body {
     border: 1px solid #000;
     border-radius: 46%;
     background: linear-gradient(180deg, #5e5e5e 85%, #45454f 100%);
-    position: static;
-    top: 100px;
-    left: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
 }
