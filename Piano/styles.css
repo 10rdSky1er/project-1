@@ -14,6 +14,8 @@ html {
     height: 290px;
     margin: 80 auto;
     padding: 90px 20px 0 20px;
+    position: relative;
+    border-radius: 10px;
 }
 
 .keys {
@@ -21,10 +23,12 @@ html {
     width: 949px;
     height: 180px;
     padding-left: 2px;
+    overflow: hidden;
 }
 
 .key {
     background-color: #ffffff;
+    border-radius: 0 0 3px 3px;
     position: relative;
     width: 41px;
     height: 175px;
@@ -35,6 +39,8 @@ html {
 .key.black--key::after {
     content: "";
     background-color: #1d1e22;
+    border-radius: 0 0 3px 3px;
+
     position: absolute;
     left: -18px;
     width: 32px;
@@ -45,4 +51,28 @@ html {
     width: 200px;
     position: absolute;
     top: 23px;
+}
+
+@media (max-width: 768px) {
+    #piano {
+        width: 992px;
+    }
+
+    .keys {
+        width: 318px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    #piano {
+        width: 675px;
+    }
+
+    .keys {
+        width: 633px;
+    }
 }
